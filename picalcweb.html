@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pi Calculator Web</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   </head>
   <body>
-    <div>
-      
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right
+      w3-hide-large w3-theme-11" onclick="w3.open()"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-11">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Wiki</a>
     </div>
+
+    <div class="w3-main" style="margin-left:250px">
+
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Pi Calc Web</h1>
+          <div>
+            <header class="w3-container w3-blue">
+              <h5>What type do you want to use?</h5>
+            </header>
+            <form name="form1">
+              <input class="w3-radio" type="radio" name="numoption" value="Circumference">
+              <label>Circumference</label>
+
+              <br>
+
+              <input class="w3-radio" type="radio" name="numoption" value="Radius" id="no2">
+              <label>Radius</label>
+
+              <br>
+
+              <input class="w3-radio" type="radio" name="numoption" value="Area" id="no3">
+              <label>Area</label>
+
+              <br>
+
+              <input class="w3-radio" type="radio" name="numoption" value="Diameter" id="no4">
+              <label>Diameter</label>
+            </form>
+          </div>
+          <br>
+          <div>
+            <header class="w3-container w3-blue">
+              <h5>What type do you want to get?</h5>
+            </header>
+            <input class="w3-radio" type="radio" name="numoptionget" value="Circumference" id="nog1">
+            <label>Circumference</label>
+
+            <br>
+
+            <input class="w3-radio" type="radio" name="numoptionget" value="Radius" id="nog2">
+            <label>Radius</label>
+
+            <br>
+
+            <input class="w3-radio" type="radio" name="numoptionget" value="Area" id="nog3">
+            <label>Area</label>
+
+            <br>
+
+            <input class="w3-radio" type="radio" name="numoptionget" value="Diameter" id="nog4">
+            <label>Diameter</label>
+          </div>
+          <br>
+          <div class="w3-container w3-light-grey">
+            <label>What number do you want to use?</label>
+            <input class="w3-input w3-border w3-round-large" type="number" name="" value="" step="0.000001" max="1000000000" id="numinput">
+            <br>
+          </div>
+          <br>
+          <input class="w3-btn w3-round-large w3-green w3-ripple" type="button" value="Submit Number" id="eqsubmit">
+          <label id="ans"></label>
+        </div>
   </body>
   <script src="picalcweb.js" charset="utf-8"></script>
 </html>
